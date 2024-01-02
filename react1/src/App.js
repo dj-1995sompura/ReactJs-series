@@ -5,7 +5,9 @@ import Button from './component/Button';
 function App() {
   return (
     <>
-      <Button></Button>
+      <Button btnlabel="Play button" onPlay={()=> console.log('play')} onPause={()=> console.log('pause')}>Play </Button>
+      {/* <Button btnlabel="pause button" onSmash={()=> console.log('pause')}>Pause</Button> */}
+
     </>
   );
 }

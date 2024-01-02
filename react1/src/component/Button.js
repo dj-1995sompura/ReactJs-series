@@ -1,9 +1,16 @@
 import React from 'react'
 
-function Button() {
+function Button({children,onPlay,onPause}) {
+  let playing = true;
+  const handleclick =()=>{
+    if(playing) onPause()
+    else onPlay()
+    
+    playing= !playing
+  }
   return (
     <div>
-      <button onClick={()=>console.log('play')}>Play</button>
+      <button onClick={handleclick}>{children}</button>
     </div>
   )
 }
