@@ -1,0 +1,21 @@
+.container{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    margin: 30px;
+}
+form {
+    margin: 10px;
+}
+.zoomeIn{
+    transform: scale(1.2);
+    transition: 0.3s linear;
+}
+
+.zoomeOut{
+    transform: scale(1);
+    transition: 0.3s linear;
+}
