@@ -34,6 +34,12 @@ function Task1() {
     console.log("out of textbox");
   };
 
+  // handler for enter key only
+  const handleEnter=(e)=>{
+    if(e.key === "Enter") 
+      console.log("Enter pressed!")
+  }
+
   return (
     <div>
       <img
@@ -47,12 +53,14 @@ function Task1() {
           type="text"
           onFocus={handleFocus}
           onBlur={handleBlur}
+          onKeyDown={handleEnter}
           placeholder="Type your comment..."
         />
         <button
           type="submit"
           onClick={handleClick}
           onDoubleClick={handleDoubleClick}
+          
         >
           Submit
         </button>
