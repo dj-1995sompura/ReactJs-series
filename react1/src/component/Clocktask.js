@@ -10,13 +10,13 @@ const [minute, setMinute]=useState(new Date().getMinutes());
 const [second, setSecond]=useState(new Date().getSeconds());
 
 useEffect(()=>{
-    const interval = setTimeout(()=>{
+    const interval = setInterval(()=>{
         // setTime(new Date().toLocaleTimeString());
         setHour(new Date().getHours());
         setMinute(new Date().getMinutes());
         setSecond(new Date().getSeconds());
         console.log(new Date().toLocaleTimeString());
-    });
+    },1000);
 
     return () => clearInterval(interval);
 });
