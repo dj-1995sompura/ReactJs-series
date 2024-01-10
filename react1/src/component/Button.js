@@ -1,7 +1,9 @@
 import React from 'react'
+import { useState } from 'react';
 
 function Button({children,onPlay,onPause}) {
-  let playing = true;
+  let [playing, setPlaying] = useState(true);
+
   const handleclick =(e)=>{
     // console.log(e.ctrlKey);
     e.stopPropagation();
@@ -9,11 +11,11 @@ function Button({children,onPlay,onPause}) {
     if(playing) onPause()
     else onPlay()
     
-    playing= !playing
+    setPlaying(!playing);
   }
   return (
     <div>
-      <button onClick={handleclick}>{children}</button>
+      <button onClick={handleclick}>{children} {playing ? '⏸️':'▶️'} </button>
     </div>
   )
 }
