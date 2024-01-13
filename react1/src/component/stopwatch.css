@@ -1,0 +1,38 @@
+body {
+    background: #c9bcbc;
+}
+.container {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stopWatch {
+    padding: 20px 80px;
+}
+.stopWatch p {
+    font-size: 20px;
+    font-weight: 900;
+}
+.stopWatch button {
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+ul.lapSlot {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.lapSlot li {
+    text-align: left;
+    padding: 5px 0;
+    font-size: 16px;
+    color: yellow;
+}
