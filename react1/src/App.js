@@ -1,5 +1,6 @@
 import './App.css';
-import Clocktask from './component/Clocktask';
+// import Clocktask from './component/Clocktask';
+import Stopwatch from './component/Stopwatch';
 // import Button from './component/Button';
 // import Comp2 from './component/Comp2';
 // import Resume from './component/Resume';
@@ -90,7 +91,8 @@ function App() {
       } */}
       {/* <Counter></Counter> */}
 
-      <Clocktask></Clocktask>
+      {/* <Clocktask></Clocktask> */}
+      <Stopwatch></Stopwatch>
     </div>
     </>
   );
